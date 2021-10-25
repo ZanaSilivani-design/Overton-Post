@@ -1,1 +1,1 @@
-# bt-overton is 
+# bt-Overton is a project from 2019 in high school. This website was created to be the primary website of John Overton high school. There were six teams which contained about four students per group. My groups' primary goal was to design and code the website. The technologies we used for this particular project were Html, Sass, Bootstrap, and JavaScript.
