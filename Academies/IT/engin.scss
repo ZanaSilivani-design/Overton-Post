@@ -1,0 +1,192 @@
+//colors//
+$black:#000;
+$red:#ec1717;
+$white:#fff;
+$nav:#201d1d;
+//font-familly//
+$Roboto: 'Roboto', sans-serif;
+//font-size//
+$font-size-regular:16px;
+$font-size-medium:38px;
+$font-size-large:55px;
+//theme-colors//
+$theme-colors: (
+  "primary": #0074d9,
+  "danger": #d8241b
+);
+  //link to bootstrap 4//
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body{
+    background-color: $white;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+//navigation bar//
+.navbar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 0.4s ease;
+    margin: 0;
+    background-color: $nav;
+    border-bottom: 2px solid $red;
+    opacity: 0.70;
+
+      .navbar-brand{
+          font-weight: bold;
+          font-family: $Roboto;
+      }
+    .navbar-nav a{
+        transition: 0.3s ease;
+        text-decoration: none;
+        font-weight: bold;
+     }
+     .navbar-nav{
+        text-align: center;
+        font-weight: bold;
+    }
+    .navbar-brand span{
+       color: $red;
+       font-weight: bold;
+    }
+ }
+
+
+ //scroll navigation bar//
+.zana{
+    background-color: $nav;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    opacity: 1;
+    border-bottom: 2px solid $red;
+    transition:all 0.4s ease;
+  }
+  .full-width{
+          background-image: url(1.jpg);
+          width: 100%;
+          height: 100vh;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          overflow: hidden;
+          .heading{
+              padding-top: 150px;
+              padding-left: 20px;
+              color: $white;
+              @media (min-width: 505px) and (max-width: 812px) { 
+                 padding-top: 50vh;  
+                }
+              h1{
+                  font-weight: bold;
+                  font-family: $Roboto;
+                  font-size: $font-size-large;
+                  span{
+                      color: $red;
+                  }
+                  @media (max-width:700px) {
+                      text-align: center;
+                      font-size: $font-size-medium;
+                  }
+                  @media (max-width:800px) {
+                    text-align: center;
+                }
+              }
+              p{
+                font-weight: bold;
+                font-family: $Roboto;
+                @media (max-width:500px) {
+                    display: none;
+                }
+            }
+
+          }
+          .about{
+            video{ 
+                margin-top: 20vh;        
+                float: right;      
+                width: 500px;
+                height: 280px;
+                margin-right:15px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 28px 1px rgba(0,0,0,0.75);
+                @media (min-width: 505px) and (max-width: 812px) { 
+                display: none;             
+                 }
+                @media (max-width:600px) {
+                    margin-top:10vh;
+                    width:100%;
+                    height: 250px;
+                    margin-right: 0px;
+                }
+                @media(max-width:550px) {
+                    margin-right: 0px;
+                }
+            }
+        
+          }
+}
+
+  .container4{
+    text-align: center;
+    background-color: $nav;
+    padding: 30px;
+    border-top: 2px solid $red;
+    padding:10px 250px 10px 250px;
+        @media(max-width:1500px) {
+            padding:10px 0px 10px 0px;
+        }
+
+    h4{
+        font-family: $Roboto;
+        font-weight: bold;
+        color: $white;            
+    }
+    h6{
+        color: $white;
+        font-weight: bold;
+        font-family: $Roboto;
+    }
+     p{
+    text-align: center;
+    color: $white;
+    font-weight: bold;
+    font-family: $Roboto;
+     }
+     .fab{
+    background-color: $white;
+    color: $red;
+    padding: 8px;
+    border-radius: 50%;
+    font-weight: bold;
+  }
+     hr{
+    width:100px;
+    background-color: $red;
+    border: 2px solid $red;
+    border-radius: 100%;
+  }
+   a{
+    color: $white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+  footer{
+
+    background-color: $nav;
+    font-weight: bold;
+    border-top: 1px solid #000;
+    padding-top: 5px;
+    padding-bottom: 1px;
+
+    h4{
+        font-size: 18px;
+        text-align: center;
+        color: $white;
+        font-weight: bold;
+        font-family: $Roboto;
+        color: $white;
+
+    }
+  }

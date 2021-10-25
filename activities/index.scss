@@ -1,0 +1,351 @@
+//colors//
+$black:#000;
+$red:#ec1717;
+$white:#fff;
+$nav:#201d1d;
+//font-familly//
+$Roboto: 'Roboto', sans-serif;
+//font-size//
+$font-size-regular:16px;
+$font-size-medium:38px;
+$font-size-large:55px;
+//theme-colors//
+$theme-colors: (
+  "primary": #0074d9,
+  "danger": #d8241b
+);
+  //link to bootstrap 4//
+@import "node_modules/bootstrap/scss/bootstrap";
+body{
+    background-color: $white;
+    padding: 0;
+    margin: 0;
+}
+//navigation bar//
+.navbar{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: all 0.4s ease;
+  margin: 0;
+  background-color: $nav;
+  border-bottom: 2px solid $red;
+  opacity: 0.70;
+
+    .navbar-brand{
+        font-weight: bold;
+        font-family: $Roboto;
+    }
+  .navbar-nav a{
+      transition: 0.3s ease;
+      text-decoration: none;
+      font-weight: bold;
+   }
+   .navbar-nav{
+      text-align: center;
+      font-weight: bold;
+  }
+  .navbar-brand span{
+     color: $red;
+     font-weight: bold;
+  }
+}
+
+
+//scroll navigation bar//
+.zana{
+  background-color: $nav;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  opacity: 1;
+  border-bottom: 2px solid $red;
+  transition:all 0.4s ease;
+}
+
+
+.menu{
+  margin-top: 90px;
+  .soccer{
+    width: 98%;
+    height: 30vh;
+    margin: 10px auto 10px auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.4s ease-in-out;
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .zana{
+      background-image: url(img/soccer.jpg);
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 98%;
+      height: 30vh;
+      z-index: -1;
+      position: absolute;  
+      }
+      h1{
+        font-family: $Roboto;
+        font-size: 3rem;
+        text-align: center;
+        padding-top: 10vh;
+        color: $white;
+        a{
+          text-decoration: none;
+          color: $white;
+        }
+      }
+  }
+    .basketball{
+      width: 98%;
+      height: 30vh;
+      margin: 10px auto 10px auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      transition: all 0.4s ease-in-out;
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .zana{
+        background-image: url(img/basketball.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 98%;
+        height: 30vh;
+        z-index: -1;
+        position: absolute;  
+        }
+        h1{
+          font-family: $Roboto;
+          font-size: 3rem;
+          text-align: center;
+          padding-top: 10vh;
+          color: white;
+          a{
+            text-decoration: none;
+            color: $white;
+          }
+        }
+    }
+    .baseball{
+      width: 98%;
+      height: 30vh;
+      margin: 10px auto 10px auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      transition: all 0.4s ease-in-out;
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .zana{
+        background-image: url(img/baseball.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 98%;
+        height: 30vh;
+        z-index: -1;
+        position: absolute;  
+        }
+        h1{
+          font-family: $Roboto;
+          font-size: 3rem;
+          text-align: center;
+          padding-top: 10vh;
+          color: white;
+          a{
+            text-decoration: none;
+            color: $white;
+          }
+        }
+    }
+    .tennis{
+      width: 98%;
+      height: 30vh;
+      margin: 10px auto 10px auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      transition: all 0.4s ease-in-out;
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .zana{
+        background-image: url(img/tennis.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 98%;
+        height: 30vh;
+        z-index: -1;
+        position: absolute;  
+        }
+        h1{
+          font-family: $Roboto;
+          font-size: 3rem;
+          text-align: center;
+          padding-top: 10vh;
+          color: white;
+          a{
+            text-decoration: none;
+            color: $white;
+          }
+        }
+    }
+    .football{
+      width: 98%;
+      height: 30vh;
+      margin: 10px auto 10px auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      transition: all 0.4s ease-in-out;
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .zana{
+        background-image: url(img/football.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 98%;
+        height: 30vh;
+        z-index: -1;
+        position: absolute;  
+        }
+        h1{
+          font-family: $Roboto;
+          font-size: 3rem;
+          text-align: center;
+          padding-top: 10vh;
+          color: white;
+          a{
+            text-decoration: none;
+            color: $white;
+          }
+        }
+    }
+    .volleyball{
+      width: 98%;
+      height: 30vh;
+      margin: 10px auto 10px auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      transition: all 0.4s ease-in-out;
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .zana{
+        background-image: url(img/volleyball.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 98%;
+        height: 30vh;
+        z-index: -1;
+        position: absolute;  
+        }
+        h1{
+          font-family: $Roboto;
+          font-size: 3rem;
+          text-align: center;
+          padding-top: 10vh;
+          color: white;
+          a{
+            text-decoration: none;
+            color: $white;
+          }
+        }
+    }
+    .wrestling{
+      width: 98%;
+      height: 30vh;
+      margin: 10px auto 10px auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      transition: all 0.4s ease-in-out;
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .zana{
+        background-image: url(img/wrestling.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 98%;
+        height: 30vh;
+        z-index: -1;
+        position: absolute;  
+        }
+        h1{
+          font-family: $Roboto;
+          font-size: 3rem;
+          text-align: center;
+          padding-top: 10vh;
+          color: white;
+          a{
+            text-decoration: none;
+            color: $white;
+          }
+        }
+    }
+}
+.container4{
+  text-align: center;
+  background-color: $nav;
+  border-top: 2px solid $red;
+  padding:10px 250px 10px 250px;
+
+  @media(max-width:1500px) {
+      padding-right:0px;
+      padding-left: 0px;
+  }
+  .row{
+      margin-right: 30px;
+      margin-left: 30px;
+  }
+  h4{
+      font-family: $Roboto;
+      font-weight: bold;
+      color: $white;            
+  }
+  h6{
+      color: $white;
+      font-weight: bold;
+      font-family: $Roboto;
+  }
+   p{
+  text-align: center;
+  color: $white;
+  font-weight: bold;
+  font-family: $Roboto;
+   }
+   .fab{
+  background-color: $white;
+  color: $red;
+  padding: 8px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+   hr{
+  width:100px;
+  background-color: $red;
+  border: 2px solid $red;
+  border-radius: 100%;
+}
+ a{
+  color: $white;
+  text-decoration: none;
+  font-weight: bold;
+}
+}
+footer{
+
+  background-color: $nav;
+  font-weight: bold;
+  border-top: 1px solid #000;
+  padding-top: 5px;
+  padding-bottom: 1px;
+
+  h4{
+      font-size: 18px;
+      text-align: center;
+      color: $white;
+      font-weight: bold;
+      font-family: $Roboto;
+      color: $white;
+
+  }
+}
